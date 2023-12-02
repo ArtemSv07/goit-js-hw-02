@@ -1,9 +1,11 @@
+'use strict';
+
 function formatMessage(message, maxLength) {
-  if (message.lenght <= maxLength) {
-    return message;
+  if (message.length <= maxLength) {
+    return `${message}`;
   } else {
-    let formatMessage = message.slice(0, maxLength) + '...';
-    return formatMessage;
+    const formatMess = message.slice(0, maxLength) + '...';
+    return `${formatMess}`;
   }
 }
 
